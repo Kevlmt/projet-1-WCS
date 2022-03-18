@@ -5,28 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="contact-style.css" />
+    <link rel="stylesheet" href="contact-style.CSS" />
   </head>
   <body>
-    <header></header>
+    <div class="hide">
+      <span class="close">&times;</span>
+      <img class="img" src="/assets/ninjaFacteur.webp" alt="facteur" />
+      <div class="text">Je suis le ninja posteur !<br>Ton message a bien été envoyé</div>
+    </div>
+    <header>
+      <button class="btn-toggle">Toggle dark/light mode</button>
+    </header>
     <main>
-      <section class="team">
-        <h3>La team 7</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          ultricies enim ut rutrum bibendum. Aenean sed maximus velit. In et
-          feugiat justo, vitae efficitur enim. Nam pellentesque, metus id ornare
-          lacinia, est lorem venenatis erat, non mollis lorem mi eget libero.
-          Sed hendrerit leo et lacus bibendum laoreet. Aliquam eleifend, arcu
-          feugiat elementum tempus, risus urna venenatis nisl, at mattis velit
-          tellus et sem. Nulla nec erat sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          ultricies enim ut rutrum bibendum. Aenean sed maximus velit. In et
-          feugiat justo, vitae efficitur enim. Nam pellentesque, metus id ornare
-          lacinia, est lorem venenatis erat, non mollis lorem mi eget libero.
-          Sed hendrerit leo et lacus bibendum laoreet. Aliquam eleifend, arcu
-          feugiat elementum tempus, risus urna venenatis nisl, at mattis velit
-          tellus et sem. Nulla nec erat sapien.
-        </p>
+      <section class="grid">
+        <section class="team">
+          <h3>L'équipe 7</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            ultricies enim ut rutrum bibendum. Aenean sed maximus velit. In et
+            feugiat justo, vitae efficitur enim. Nam pellentesque, metus id
+            ornare lacinia, est lorem venenatis erat, non mollis lorem mi eget
+            libero. Sed hendrerit leo et lacus bibendum laoreet. Aliquam
+            eleifend, arcu feugiat elementum tempus, risus urna venenatis nisl,
+            at mattis velit tellus et sem. Nulla nec erat sapien.Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Quisque ultricies enim
+            ut rutrum bibendum. Aenean sed maximus velit. In et feugiat justo,
+            vitae efficitur enim. Nam pellentesque, metus id ornare lacinia, est
+            lorem venenatis erat, non mollis lorem mi eget libero. Sed hendrerit
+            leo et lacus bibendum laoreet. Aliquam eleifend, arcu feugiat
+            elementum tempus, risus urna venenatis nisl, at mattis velit tellus
+            et sem. Nulla nec erat sapien.
+          </p>
+        </section>
+        <section class="contact">
+          <h3>Nous Contacter</h3>
+          <form class="myform">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" />
+            <label for="mail">E-mail :</label>
+            <input type="email" id="mail" name="mail" />
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="message"></textarea>
+            <input type="submit" value="Envoyer" />
+          </form>
+        </section>
       </section>
       <section class="map">
         <iframe
@@ -38,20 +60,8 @@
           loading="lazy"
         ></iframe>
       </section>
-      <section class="contact">
-        <h3>Nous Contacter</h3>
-        <form>
-          <label for="name">Nom :</label>
-          <input type="text" id="name" name="name" />
-          <label for="mail">E-mail :</label>
-          <input type="email" id="mail" name="mail" />
-          <label for="msg">Message :</label>
-          <textarea id="msg" name="message"></textarea>
-          <input type="submit" value="Envoyer" />
-        </form>
-        <script src="contact.js"></script>
-      </section>
     </main>
     <footer></footer>
+    <script src="contact.js"></script>
   </body>
 </html>

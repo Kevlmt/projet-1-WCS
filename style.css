@@ -20,7 +20,7 @@ button {
 button.dark {
     background-color: rgb(39, 39, 58);
   }
-  
+
 .nav{
     position: fixed;
     left: 0;
@@ -36,9 +36,6 @@ button.dark {
 .nav.isOpen{
    transform: translateX(0%);
    -webkit-transform: translateX(0%);
-}
-.nav ul{
-
 }
 .nav ul li{
     list-style: none;

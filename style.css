@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
 
 body.light {
     background-color: rgb(247, 231, 208);
@@ -21,7 +20,6 @@ button {
 button.dark {
     background-color: rgb(39, 39, 58);
   }
-=======
 body{
     background-color:rgb(39,39,58) ;
     color: rgb(255,136,0);
@@ -35,7 +33,6 @@ body{
     width: 100%;
     height: 100%;
     /* margin-top: 50%; */
-    font-family: ;
     padding-top: 5%;
     text-align: center;
     /* font-size: 0px; */
@@ -45,7 +42,6 @@ body{
 
 }
 /* HEADER ET MENU BURGER*/
->>>>>>> 73420473c4261db1b6c09ce1a42a504b640b9fc7
 
 .nav{
     position: fixed;
@@ -64,12 +60,9 @@ body{
    transform: translateX(0%);
    -webkit-transform: translateX(0%);
 }
-<<<<<<< HEAD
-=======
 .nav ul{
     align-items: center;
 }
->>>>>>> 73420473c4261db1b6c09ce1a42a504b640b9fc7
 .nav ul li{
     list-style: none;
     margin: 40px 0;
@@ -206,7 +199,6 @@ p{
         width: 100%;
         height: 100%;
         /* margin-top: 50%; */
-        font-family: ;
         padding-top: 5%;
         font-size: 3rem;
         text-align: center;

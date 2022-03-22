@@ -1,40 +1,26 @@
-/* alert submit */
+// FORMULAIRE DE CONTACTE
+
 const form = document.querySelector("form");
 const show = document.querySelector("div");
 const hide = document.querySelector("span");
+const name = document.querySelector("#name");
+const mail = document.querySelector("#mail");
+const msg = document.querySelector("#msg");
 
-
-if (form) {
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    show.classList.add("show")
-  });
-}
-
-if (hide) {
-  hide.addEventListener("click", function (event) {
-    event.preventDefault();
-    show.classList.remove("show")
-  })
-}
-
-
-/* theme dark/light*/
-const button = document.querySelector(".btn-toggle")
-const body = document.querySelector("body")
-
-const currentTheme = localStorage.getItem("theme");
-
-if (currentTheme == "light") {
-  body.classList.add("light");
-}
-
-button.addEventListener("click", function () {
-  body.classList.toggle("light");
-
-  let theme = "dark";
-  if (body.classList.contains("light")) {
-    theme = "light";
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  if (this.name.value == "") {
+    alert("Ce nom n'est pas valide.");
+  } else if (this.msg.value == "") {
+    alert("Il n'y a aucun message.");
+  } else if (this.mail.value == "") {
+    alert("Cet email n'est pas valide.");
+  } else {
+    show.classList.add("show");
   }
-  localStorage.setItem("theme", theme);
-})
+});
+
+hide.addEventListener("click", function (event) {
+  event.preventDefault();
+  show.classList.remove("show");
+});

@@ -11,13 +11,27 @@
     <div class="hide">
       <span class="close">&times;</span>
       <img class="img" src="/assets/ninjaFacteur.webp" alt="facteur" />
-      <div class="text">Je suis le ninja posteur !<br>Ton message a bien été envoyé</div>
+      <div class="text">
+        Je suis le ninja posteur !<br />Ton message a bien été envoyé
+      </div>
     </div>
     <header>
-      <button class="btn-toggle">Toggle dark/light mode</button>
+       <button id="btn-toggle" >&#x1F506;/&#x1F31B; </button>
     </header>
     <main>
       <section class="grid">
+        <section class="contact">
+          <h3>Nous Contacter</h3>
+          <form class="myform">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" />
+            <label for="mail">E-mail :</label>
+            <input type="email" id="mail" name="mail" />
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="message"></textarea>
+            <input type="submit" value="Envoyer" />
+          </form>
+        </section>
         <section class="team">
           <h3>L'équipe 7</h3>
           <p>
@@ -37,18 +51,6 @@
             et sem. Nulla nec erat sapien.
           </p>
         </section>
-        <section class="contact">
-          <h3>Nous Contacter</h3>
-          <form class="myform">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" />
-            <label for="mail">E-mail :</label>
-            <input type="email" id="mail" name="mail" />
-            <label for="msg">Message :</label>
-            <textarea id="msg" name="message"></textarea>
-            <input type="submit" value="Envoyer" />
-          </form>
-        </section>
       </section>
       <section class="map">
         <iframe
@@ -62,6 +64,7 @@
       </section>
     </main>
     <footer></footer>
+    <script src="theme.js"></script>
     <script src="contact.js"></script>
   </body>
 </html>

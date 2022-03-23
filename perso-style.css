@@ -1,36 +1,52 @@
-body {
-  margin: 0;
-  line-height: 1.5;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /*type de texte*/
-  background-color: rgb(39, 39, 48);    /*couleur du fond*/
-  color: rgb(255, 136, 0);    /*coleur du texte*/
-}
-
 h2 {
   text-align: center;
   margin-top: 50px;
 }
 
+/*theme*/
+body.light {
+  background-color: rgb(247, 231, 208);
+  color: black;
+}
+header.light {
+  background-color: rgb(247, 231, 208);
+  color: black;
+}
+button.dark {
+  background-color: rgb(39, 39, 58);
+}
+button {
+  background-color: rgb(247, 231, 208);
+  border-radius: 0.3rem;
+  color: rgb(255, 136, 0);
+  border: none;
+  cursor: pointer;
+  float: right;
+  z-index: 21;
+  position: absolute;
+  right: 0;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
 .cards {
-  margin-top: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .card {
-  border-radius: 10px;  /*arondie des carte*/
-  width: 300px;         /*largeur de l'image*/
-  margin: 20px 50px 20px 50px;  /*marge entre les image (top right bot left*/
+  border-radius: 10px; /*arondie des carte*/
+  width: 300px; /*largeur de l'image*/
+  margin: 20px 50px 20px 50px; /*marge entre les image (top right bot left*/
   display: flex;
   flex-direction: column;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  /*ombre lumineuse des image*/
-  overflow: hidden;   /*animation*/
-  transition:transform .4s;   /*animation*/
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /*ombre lumineuse des image*/
+  overflow: hidden; /*animation*/
+  transition: transform 0.4s; /*animation*/
 }
 
 .card:hover {
-  cursor:pointer;         /*animation*/
-  transform:scale(1.08);  /*animation*/
+  cursor: pointer; /*animation*/
+  transform: scale(1.08); /*animation*/
 }
 
 .card-img {
@@ -39,8 +55,8 @@ h2 {
   background-size: cover;
   background-position: center;
   background-image: url("assets/Naruto.png");
-  height: 400px;        /*hauteur de l'image*/
-  width: 100%;          /*affiche de 100% sur l'image*/
+  height: 400px; /*hauteur de l'image*/
+  width: 100%; /*affiche de 100% sur l'image*/
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -50,45 +66,37 @@ h2 {
   padding: 10px 20px;
 }
 .card-body h2 {
-  margin: 10px 0px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-/*
-h1 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.personnage {
-  justify-content: space-between;
+.card-img p {
+  /*cacher le texte*/
+  opacity: 0; /*transparence de l'image ("0" = invisible=*/
+  /*padding-top: 300px; /*position par rapport au top*/
+  transition: all 1.5s; /*temps d'affiche de l'animation*/
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateY(-100%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-section {
-  padding: 0.5rem;
-  margin: 0 auto;
-  max-width: 100ch;
+.card:hover .card-img p {
+  /*montrer le texte*/
+  opacity: 1; /*transparence de l'image ("1" = aucune=*/
+  /*padding-top: 0px; /*position par rapport au top*/
+  transition: all 1.5s; /*temps d'affiche de l'animation*/
+  transform: translateY(0%);
 }
 
-section > article {
-  display: inline-block;
-  padding: 0.5rem;
-  margin: 0 0.5rem 1rem;
-  border-radius: 0.5rem;
-  margin-right: auto;
-  margin-left: 40px;
-}
-*/
-/* width: 45%; */
-
-.card-img p {               /*cacher le texte*/
-  opacity: 0;               /*transparence de l'image ("0" = invisible=*/
-  padding-top: 300px;       /*position par rapport au top*/
-  transition: all 1.5s      /*temps d'affiche de l'animation*/
-}
-
-.card:hover .card-img p{    /*montrer le texte*/
-  opacity: 1;               /*transparence de l'image ("1" = aucune=*/
-  padding-top: 0px;         /*position par rapport au top*/
-  transition: all 1.5s;     /*temps d'affiche de l'animation*/
+@media screen and (min-width: 768px) {
+  .cards {
+    margin-top: 100px;
+  }
 }

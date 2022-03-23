@@ -105,7 +105,9 @@ button {
   color: rgb(255, 136, 0);
   border: none;
   cursor: pointer;
+  position: static;
   float: right;
+  z-index: 21;
 }
 
 button.dark {

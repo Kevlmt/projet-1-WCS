@@ -4,38 +4,38 @@ const personnage = [
   {
     name: "Shikamaru Nara",
     picture: "assets/Shikamaru.png",
-    text: "This just an example"
+    text: "This just an example",
   },
   {
     name: "Kakashi Hatake",
     picture: "assets/Kakashi.png",
-    text: "This just an example"
+    text: "This just an example",
   },
   {
     name: "Tsunade",
     picture: "assets/Tsunade.png",
-    text: "This just an example"
+    text: "This just an example",
   },
   {
     name: "Shizune",
     picture: "assets/Shizune.png",
-    text: "This just an example"
+    text: "This just an example",
   },
   {
     name: "Yamato",
     picture: "assets/Yamato.png",
-    text: "This just an example"
+    text: "This just an example",
   },
   {
     name: "Sasuke Uchiwa",
     picture: "assets/Sasuke.png",
-    text: "anis grand fan"
+    text: "anis grand fan",
   },
   {
     name: "Sakura Haruno",
     picture: "assets/Sakura.png",
-    text: "anis grand fan"
-  }
+    text: "anis grand fan",
+  },
 ];
 
 function createCard(title, imageUrl, text) {
@@ -47,20 +47,20 @@ function createCard(title, imageUrl, text) {
   cardHeader.classList.add("card-header");
   card.appendChild(cardHeader);
 
-  const cardImg = document.createElement("div");      /*l'image*/
+  const cardImg = document.createElement("div"); /*l'image*/
   cardImg.style.backgroundImage = `url(${imageUrl})`;
   cardImg.classList.add("card-img");
   cardHeader.appendChild(cardImg);
 
-  const cardText = document.createElement("p")    /*text dans l'image (text)*/
+  const cardText = document.createElement("p"); /*text dans l'image (text)*/
   cardText.innerHTML = text;
-  cardImg.appendChild(cardText)
+  cardImg.appendChild(cardText);
 
   const cardBody = document.createElement("div");
   cardBody.classList.add("card-body");
   card.appendChild(cardBody);
 
-  const cardTitle = document.createElement("h2");   /*titre (name)*/
+  const cardTitle = document.createElement("h2"); /*titre (name)*/
   cardTitle.classList.add("card-title");
   cardTitle.innerHTML = title;
   cardBody.appendChild(cardTitle);

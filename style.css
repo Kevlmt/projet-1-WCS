@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 body.light {
   background-color: rgb(247, 231, 208);
   color: black;
@@ -39,14 +38,15 @@ button {
   right: 0;
   margin: 0.5rem 0.5rem 0 0;
 }
-
-body {
-  background-color: rgb(39, 39, 58);
-  color: rgb(255, 136, 0);
+#home img{
+    width: 100%;
+    border-bottom: solid 1px white;
 }
-#home img {
-  width: 100%;
-  border-bottom: solid 1px white;
+#home h1{
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    text-align: center;
 }
 #home h1 {
   width: 100%;
@@ -155,8 +155,37 @@ p {
   padding: 10px;
   font-size: 16px;
 }
+    /*CONTENU FOOTER*/
+.foot {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgb(39,39,58);
+    border-top: solid 1px white;
+    height: 20vh;
+    flex-direction: column;
+}
+.foot ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.foot li{
+    margin-left: 10px ;
+    margin-right: 10px ;
 
-/*Media Rsponsive site*/
+}
+.foot a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+
+
+     /* MEDIA RESPONSIVE*/
 
 @media screen and (min-width: 768px) {
   .one {
@@ -246,16 +275,7 @@ p {
   .btn-nav .barre {
     display: none;
   }
-  /* #home{
-        background-image: url(assets/konoha.jpeg);
-        background-attachment:fixed;
-        background-position:center;
-        background-repeat:no-repeat;
-        background-size:cover;
-        height: 800px;
-        max-width: 100%;
-    } */
-
+  
   #middle {
     background-image: url(assets/madara.webp);
     background-attachment: fixed;

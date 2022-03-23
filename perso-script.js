@@ -55,6 +55,7 @@ function createCard(title, imageUrl, text) {
   const cardText = document.createElement("p"); /*text dans l'image (text)*/
   cardText.innerHTML = text;
   cardImg.appendChild(cardText);
+  cardText.classList.add("card-p")
 
   const cardBody = document.createElement("div");
   cardBody.classList.add("card-body");

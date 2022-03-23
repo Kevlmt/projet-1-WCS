@@ -6,6 +6,7 @@ const header = document.querySelector("header");
 const nav = document.querySelector(".nav");
 const barre = document.querySelectorAll(".barre");
 const ul = document.querySelectorAll("a");
+const cardP = document.querySelectorAll(".card-p")
 
 const currentTheme = localStorage.getItem("theme");
 const currentButton = localStorage.getItem("buttonTheme");
@@ -13,6 +14,7 @@ const currentHeader = localStorage.getItem("headerTheme");
 const currentNav = localStorage.getItem("navTheme");
 const currentBarre = localStorage.getItem("barreTheme");
 const currentUl = localStorage.getItem("ulTheme");
+
 
 if (currentTheme == "light") {
   body.classList.add("light");
@@ -26,6 +28,7 @@ if (currentTheme == "light") {
   ul[1].classList.add("light");
   ul[2].classList.add("light");
   ul[3].classList.add("light");
+
 }
 
 button.addEventListener("click", function () {
@@ -47,6 +50,7 @@ button.addEventListener("click", function () {
   let navTheme = "light";
   let barreTheme = "dark";
   let ulTheme = "light";
+  let cardPTheme = "light"
 
   if (body.classList.contains("light")) {
     theme = "light";
@@ -55,6 +59,7 @@ button.addEventListener("click", function () {
     navTheme = "light";
     barreTheme = "light";
     ulTheme = "light";
+    cardPTheme = "light"
   }
   localStorage.setItem("theme", theme);
   localStorage.setItem("buttonTheme", buttonTheme);
@@ -62,4 +67,5 @@ button.addEventListener("click", function () {
   localStorage.setItem("navTheme", navTheme);
   localStorage.setItem("barreTheme", barreTheme);
   localStorage.setItem("ulTheme", ulTheme);
+  localStorage.setItem("cardPTheme", cardPTheme)
 });

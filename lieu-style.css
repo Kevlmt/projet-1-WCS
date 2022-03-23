@@ -1,4 +1,5 @@
 /*theme*/
+
 body.light {
   background-color: rgb(247, 231, 208);
   color: black;
@@ -25,7 +26,6 @@ button {
 
 h2 {
   text-align: center;
-  margin-top: 50px;
 }
 
 .cards {
@@ -43,11 +43,16 @@ h2 {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /*ombre lumineuse des image*/
   overflow: hidden; /*animation*/
   transition: transform 0.4s; /*animation*/
+
 }
 
 .card:hover {
   cursor: pointer; /*animation*/
   transform: scale(1.08); /*animation*/
+}
+
+.card-header {
+  z-index: -1 !important;
 }
 
 .card-img {
@@ -64,52 +69,35 @@ h2 {
 }
 
 .card-body {
-  padding: 10px 20px;
+  padding: 10px 20px;  
 }
 .card-body h2 {
-  margin: 10px 0px;
-}
-
-/*
-h1 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.personnage {
-  justify-content: space-between;
+  margin: auto;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
-
-section {
-  padding: 0.5rem;
-  margin: 0 auto;
-  max-width: 100ch;
-}
-
-section > article {
-  display: inline-block;
-  padding: 0.5rem;
-  margin: 0 0.5rem 1rem;
-  border-radius: 0.5rem;
-  margin-right: auto;
-  margin-left: 40px;
-}
-*/
-/* width: 45%; */
 
 .card-img p {
   /*cacher le texte*/
   opacity: 0; /*transparence de l'image ("0" = invisible=*/
-  padding-top: 300px; /*position par rapport au top*/
+  /*padding-top: 300px; /*position par rapport au top*/
   transition: all 1.5s; /*temps d'affiche de l'animation*/
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateY(-100%);
 }
 
 .card:hover .card-img p {
   /*montrer le texte*/
   opacity: 1; /*transparence de l'image ("1" = aucune=*/
-  padding-top: 0px; /*position par rapport au top*/
+ /* padding-top: 0px; /*position par rapport au top*/
   transition: all 1.5s; /*temps d'affiche de l'animation*/
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 768px) {

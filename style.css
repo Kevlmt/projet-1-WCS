@@ -7,6 +7,10 @@ body.light {
   background-color: rgb(247, 231, 208);
   color: black;
 }
+p.card-p {
+  color: white;
+}
+
 header.light {
   background-color: rgb(247, 231, 208);
   color: black;
@@ -21,9 +25,7 @@ button.dark {
 div.barre.dark {
   background-color: rgb(39, 39, 58);
 }
-a.light {
-  color: black !important;
-}
+
 
 button {
   background-color: rgb(247, 231, 208);
@@ -106,6 +108,10 @@ body {
   margin: 15px;
   cursor: pointer;
   z-index: 99;
+}
+
+ul li a.light {
+  color: black ;
 }
 .btn-nav .barre.white {
   background: white;

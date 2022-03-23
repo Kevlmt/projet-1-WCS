@@ -27,6 +27,7 @@ div.barre.dark {
 body {
   background-color: rgb(39, 39, 58);
   color: rgb(255, 136, 0);
+  font-family: 'Amaranth', sans-serif;
 }
 
 button {

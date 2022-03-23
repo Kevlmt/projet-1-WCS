@@ -24,7 +24,10 @@ button.dark {
 div.barre.dark {
   background-color: rgb(39, 39, 58);
 }
-
+body {
+  background-color: rgb(39, 39, 58);
+  color: rgb(255, 136, 0);
+}
 
 button {
   background-color: rgb(247, 231, 208);

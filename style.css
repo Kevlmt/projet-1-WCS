@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 body.light {
     background-color: rgb(247, 231, 208);
     color: black;
@@ -31,15 +30,12 @@ body{
 #home img{
     width: 100%;
     border-bottom: solid 1px white;
-
 }
 #home h1{
     width: 100%;
     height: 100%;
-    /* margin-top: 50%; */
     padding-top: 5%;
     text-align: center;
-    /* font-size: 0px; */
 }
 #middle{
     display: none;
@@ -107,6 +103,7 @@ header{
     height: 70px;
     border-bottom: solid 1px white;
 }
+        /* contenu body*/
 p{
     text-align: center;
 }
@@ -135,8 +132,37 @@ p{
     padding: 10px;
     font-size: 16px;
 }
+    /*CONTENU FOOTER*/
+.foot {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgb(39,39,58);
+    border-top: solid 1px white;
+    height: 20vh;
+    flex-direction: column;
+}
+.foot ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.foot li{
+    margin-left: 10px ;
+    margin-right: 10px ;
 
-/*Media Rsponsive site*/
+}
+.foot a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+
+
+     /* MEDIA RESPONSIVE*/
 
 @media screen and (min-width:768px){ 
     .one {
@@ -174,6 +200,7 @@ p{
     .three p{
         width:80ch;
     }
+            /* header*/
     .nav{
         width: 100%;
         height: 80px;
@@ -194,6 +221,8 @@ p{
     header{
         height: 20px;
     }
+
+            /*home img et titre*/
     #home img{
         width: 100%;
         height: 700px;
@@ -202,19 +231,12 @@ p{
     #home h1{
         width: 100%;
         height: 100%;
-        /* margin-top: 50%; */
         padding-top: 5%;
         font-size: 3rem;
         text-align: center;
         font-size: 100px;
-    }
-    h2{
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        height: 5vw;
-        font-size: 40px;
-    }
+    } 
+    /* design trait blanc*/
     .line{
         height: 1px;
         width: 60%;
@@ -226,16 +248,6 @@ p{
     .btn-nav .barre{
         background-color:rgb(39,39,58) ;
     }
-    /* #home{
-        background-image: url(assets/konoha.jpeg);
-        background-attachment:fixed;
-        background-position:center;
-        background-repeat:no-repeat;
-        background-size:cover;
-        height: 800px;
-        max-width: 100%;
-    } */
-    
     #middle{
         background-image: url(assets/madara.webp);
         background-attachment:fixed;

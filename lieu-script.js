@@ -4,37 +4,37 @@ const personnage = [
   {
     name: "Monument Hokage",
     picture: "assets/Monument_Hokage.png",
-    text: "This just an example",
+    text: "Le Monument des Hokage est une montagne où les visages de tous les Hokage furent sculptés.",
   },
   {
     name: "Ramen Ichiraku",
     picture: "assets/Ramen_Ichiraku.png",
-    text: "This just an example",
+    text: "Ramen Ichiraku est un restaurant de ramen situé à Konoha",
   },
   {
     name: "Sources chaudes",
     picture: "assets/Sources_chaudes_de_Konoha.png",
-    text: "This just an example",
+    text: "Les bains de Konoha font offices de véritables espaces de détente et de regain d’énergie. Jiraya, le Sannin légendaire, aimait beaucoup admirer les filles et prendre des infos pour son roman.",
   },
   {
     name: "Academie",
     picture: "assets/La_nouvelle_Academie.png",
-    text: "This just an example",
+    text: "L'Académie est le centre de formation de Konoha pour les futurs ninjas. Elle fut fondée par Tobirama Senju, le Deuxième Hokage, par besoin militaire. Une fois leur diplôme en poche, les apprentis ninjas peuvent devenir genin.",
   },
   {
     name: "Hôpital",
     picture: "assets/Hôpital_de_Konoha.png",
-    text: "This just an example",
+    text: "Un lieu qui accueille les ninjas blessés mais aussi les simples villageois. Le talent des médecins, et particulièrement des ninjas médecins qui composent cette institution, font de cet hôpital l'un des meilleurs du monde.",
   },
   {
     name: "Cimetiere",
     picture: "assets/Cimetiere.png",
-    text: "anis grand fan",
+    text: "Le cimetière de Konoha est le lieu où sont enterrés les Hokage et les ninjas morts au combat. Les Hokage sont enterrés dans de plus grosses tombes que les autres. Pour faire honneur aux ninjas décédés, leurs noms sont gravés sur un monument.",
   },
   {
     name: "Mémorial",
     picture: "assets/Mémorial_Konoha.jpg",
-    text: "anis grand fan",
+    text: "Le mémorial de Konoha est un monument où sont gravés la liste des noms des ninjas qui se sont sacrifiés pour le village. Dans le manga, il a l'apparence d'une pierre tombale normale, alors que dans l'anime il a plutôt la forme d'un kunaï.",
   },
 ];
 

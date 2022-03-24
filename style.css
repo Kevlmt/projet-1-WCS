@@ -8,6 +8,7 @@ body.light {
 }
 p.card-p {
   color: white;
+  padding: 0.5rem;
 }
 
 header.light {
@@ -90,9 +91,7 @@ button {
   margin: 40px 0;
   padding-right: 5px;
 }
-.nav ul li:hover {
-  border-bottom: solid 1px orange;
-}
+
 .nav ul li a {
   color: rgb(255, 136, 0);
   text-transform: uppercase;
@@ -102,6 +101,7 @@ button {
 .nav ul li a:hover {
   cursor: pointer;
   color: white;
+  border-bottom: solid 1px orange;
 }
 .btn-nav {
   height: 30px;

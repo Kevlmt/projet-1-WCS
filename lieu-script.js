@@ -9,7 +9,7 @@ const personnage = [
   {
     name: "Ramen Ichiraku",
     picture: "assets/Ramen_Ichiraku.png",
-    text: "Ramen Ichiraku est un restaurant de ramen situé à Konoha",
+    text: "Ramen Ichiraku est un restaurant de ramen situé à Konoha. (C'est le restaurant favori de notre cher Hokage Naruto)"
   },
   {
     name: "Sources chaudes",

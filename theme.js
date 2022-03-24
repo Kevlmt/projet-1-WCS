@@ -6,7 +6,7 @@ const header = document.querySelector("header");
 const nav = document.querySelector(".nav");
 const barre = document.querySelectorAll(".barre");
 const ul = document.querySelectorAll("a");
-const cardP = document.querySelectorAll(".card-p")
+const cardP = document.querySelectorAll(".card-p");
 
 const currentTheme = localStorage.getItem("theme");
 const currentButton = localStorage.getItem("buttonTheme");
@@ -15,20 +15,17 @@ const currentNav = localStorage.getItem("navTheme");
 const currentBarre = localStorage.getItem("barreTheme");
 const currentUl = localStorage.getItem("ulTheme");
 
-
 if (currentTheme == "light") {
   body.classList.add("light");
   button.classList.add("dark");
   header.classList.add("light");
   nav.classList.add("light");
-  barre[0].classList.add("dark");
-  barre[1].classList.add("dark");
-  barre[2].classList.add("dark");
-  ul[0].classList.add("light");
-  ul[1].classList.add("light");
-  ul[2].classList.add("light");
-  ul[3].classList.add("light");
-
+  for (let i = 0; i < barre.length; i++) {
+    barre[i].classList.add("dark");
+  }
+  for (let i = 0; i < ul.length; i++) {
+    ul[i].classList.add("light");
+  }
 }
 
 button.addEventListener("click", function () {
@@ -36,13 +33,12 @@ button.addEventListener("click", function () {
   button.classList.toggle("dark");
   header.classList.toggle("light");
   nav.classList.toggle("light");
-  barre[0].classList.toggle("dark");
-  barre[1].classList.toggle("dark");
-  barre[2].classList.toggle("dark");
-  ul[0].classList.toggle("light");
-  ul[1].classList.toggle("light");
-  ul[2].classList.toggle("light");
-  ul[3].classList.toggle("light");
+  for (let i = 0; i < barre.length; i++) {
+    barre[i].classList.toggle("dark");
+  }
+  for (let i = 0; i < ul.length; i++) {
+    ul[i].classList.toggle("light");
+  }
 
   let theme = "dark";
   let buttonTheme = "light";
@@ -50,7 +46,7 @@ button.addEventListener("click", function () {
   let navTheme = "light";
   let barreTheme = "dark";
   let ulTheme = "light";
-  let cardPTheme = "light"
+  let cardPTheme = "light";
 
   if (body.classList.contains("light")) {
     theme = "light";
@@ -59,7 +55,7 @@ button.addEventListener("click", function () {
     navTheme = "light";
     barreTheme = "light";
     ulTheme = "light";
-    cardPTheme = "light"
+    cardPTheme = "light";
   }
   localStorage.setItem("theme", theme);
   localStorage.setItem("buttonTheme", buttonTheme);
@@ -67,5 +63,5 @@ button.addEventListener("click", function () {
   localStorage.setItem("navTheme", navTheme);
   localStorage.setItem("barreTheme", barreTheme);
   localStorage.setItem("ulTheme", ulTheme);
-  localStorage.setItem("cardPTheme", cardPTheme)
+  localStorage.setItem("cardPTheme", cardPTheme);
 });

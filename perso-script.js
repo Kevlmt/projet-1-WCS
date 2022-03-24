@@ -27,7 +27,7 @@ const personnage = [
     text: "Yamato est un membre des forces spéciales de Konoha. En raison de sa maîtrise unique du Mokuton (maitrise du bois), il fut assigné provisoirement à l'Équipe 7, en remplacement de Kakashi Hatake afin d'aider à garder le Démon-Renard à Neuf Queues enfermé en Naruto sous contrôle. Bien que Kakashi revint finalement dans l'équipe, Yamato reste à disposition pour fournir son aide en cas de besoin.",
   },
   {
-    name: "Sasuke Uchiwa",
+    name: "Sasuke Uchiha",
     picture: "assets/Sasuke.png",
     text: "Sasuke etait l'un des membres de l'equipe 7. Il decida de deserter le village afin d'assouvir sa quete de vengeance et devint donc un ennemi du village de konoha. Mais il revint sur le droit chemin en devenant un des hero de la grande guerre. Il continue a aider Naruto dans l'ombre et est considéré comme son plus grand rival.",
   },

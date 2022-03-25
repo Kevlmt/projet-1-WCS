@@ -4,7 +4,7 @@ const personnage = [
   {
     name: "Monument Hokage",
     picture: "assets/Monument_Hokage.png",
-    text: "Le Monument des Hokage est une montagne où les visages de tous les Hokage furent sculptés.",
+    text: "Le Monument des Hokages est une montagne où les visages de tous les Hokages furent sculptés.",
   },
   {
     name: "Ramen Ichiraku",
@@ -29,12 +29,12 @@ const personnage = [
   {
     name: "Cimetière",
     picture: "assets/Cimetiere.png",
-    text: "Le cimetière de Konoha est le lieu où sont enterrés les Hokage et les ninjas morts au combat. Les Hokage sont enterrés dans de plus grosses tombes que les autres. Pour faire honneur aux ninjas décédés, leurs noms sont gravés sur un monument.",
+    text: "Le cimetière de Konoha est le lieu où sont enterrés les Hokages et les ninjas morts au combat. Les Hokages sont enterrés dans de plus grosses tombes que les autres. Pour faire honneur aux ninjas décédés, leurs noms sont gravés sur un monument.",
   },
   {
     name: "Mémorial",
     picture: "assets/Mémorial_Konoha.jpg",
-    text: "Le mémorial de Konoha est un monument où sont gravés la liste des noms des valeureux ninjas qui se sont sacrifiés pour le village. Il est le symbol de reccueil et de tristesse, mais aussi respect pour les innombrabres heros a qui la vie a été malheureusement volée...",
+    text: "Le mémorial de Konoha est un monument où sont gravés la liste des noms des valeureux ninjas qui se sont sacrifiés pour le village. Il est le symbol de reccueil et de tristesse, mais aussi respect pour les innombrabres Héros a qui la vie a été malheureusement prise... Kakashi y passe souvent du temps en raison de son ami d'enfance Obito qui est décédé sous ses yeux.",
   },
 ];
 
